@@ -14,3 +14,16 @@ body {
     color-scheme: dark;
   }
 }
+
+@font-face {
+  font-family: Titulos;
+  src: url(public/fonts/FontsFree-Net-Tungsten-Bold.woff2);
+}
+@font-face {
+  font-family: Textos;
+  src: url(public/fonts/dinnextw1g.woff2);
+}
+
+*{
+  font-family: Textos;
+}
