@@ -18,11 +18,11 @@ export default function Agentes() {
                     <option value="Controller">Controller</option>
                 </select>
                 <div className="row">
-                    <AgenteCard></AgenteCard>
-                    <AgenteCard></AgenteCard>
-                    <AgenteCard></AgenteCard>
-                    <AgenteCard></AgenteCard>
-                    <AgenteCard></AgenteCard>
+                    <AgenteCard id='2' img='' nombre='gekko'></AgenteCard>
+                    <AgenteCard id='3' img='' nombre='gekko'></AgenteCard>
+                    <AgenteCard id='4' img='' nombre='gekko'></AgenteCard>
+                    <AgenteCard id='5' img='' nombre='gekko'></AgenteCard>
+                    <AgenteCard id='6' img='' nombre='gekko'></AgenteCard>
                 </div>
             </main>
         </>

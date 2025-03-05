@@ -1,9 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from '../components/Header';
 
 export default function Skins() {
     return (
-        <div>
-            <h1>Skins</h1>
-        </div>
+        <>
+            <Header></Header>
+        </>
     )
 }
