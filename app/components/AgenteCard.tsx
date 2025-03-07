@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 function AgenteCard({nombre, img, id}: AgenteCardProps) {
 
-    const ruta = "/agentes/" + id;
+    const ruta = "/agente/" + id;
 
   return (
     <div className="col-6 col-md-4 col-xxl-3 my-3" id="plantilla">

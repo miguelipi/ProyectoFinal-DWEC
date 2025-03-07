@@ -12,9 +12,9 @@ function Header() {
                                 fill="#fff"></path>
                         </svg>
                     </a>
-                    <Enlace href='agentes' texto='Agentes'></Enlace>
-                    <Enlace href='armas' texto='Skins'></Enlace>
-                    <Enlace href='rangos' texto='Rangos'></Enlace>
+                    <Enlace href='/agentes' texto='Agentes'></Enlace>
+                    <Enlace href='/armas' texto='Skins'></Enlace>
+                    <Enlace href='/rangos' texto='Rangos'></Enlace>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
