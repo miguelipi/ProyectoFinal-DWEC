@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/122e6caea8b2a2dbb6d6e71eea4e24effab342da-5120x574.png);
+    background-size: cover; /* Hace que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    font-family: Titulos;
+     color: white;
+}
+header{
+    font-family: Textos;
+} 
+.info{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Textos;
+}
+.title{
+    font-family: Titulos;
+    font-size: 7rem;
+    font-style: italic;
+}
+.rol{
+    border: 1px solid  #ff4655;
+}
+.abilidad{
+    font-family: Textos;
+
+}
+i{
+    background-color: #42484eb2;
+    padding: 4%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 10px;
+}

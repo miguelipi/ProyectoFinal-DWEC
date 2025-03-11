@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+html,
+body {
+  @apply bg-white dark:bg-gray-950;
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+}
+
+@font-face {
+  font-family: Titulos;
+  src: url(/fonts/FontsFree-Net-Tungsten-Bold.woff2);
+}
+@font-face {
+  font-family: Textos;
+  src: url(/fonts/dinnextw1g.woff2);
+}
+
+*{
+  font-family: Textos;
+}
