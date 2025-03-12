@@ -7,10 +7,13 @@ function SkinCard({ id, img, nombre, tipo }: SkinCardProps) {
 
     return (
         <div className="col-12 col-sm-6 col-lg-4 mb-3" id="plantillaArmas">
-            <div className="card h-100">
-                <a href={ruta} id="enlace"> <img className="card-img-top  mt-auto" id="imagen"
-                    src={img}
-                    alt="Title" />
+            <div className="card h-100 d-flex flex-column">
+                <a href={ruta} id="enlace" className="d-flex flex-grow-1 align-items-center">
+                    <img className="card-img-top img-fluid" id="imagen"
+                        src={img}
+                        alt="Title"
+                        style={{ objectFit: "contain", maxHeight: "200px" }} // Ajusta maxHeight según necesidad
+                    />
                 </a>
                 <div className="card-body row align-items-end">
                     <h4 className="card-title col " id="nombreArma">{nombre}</h4>
