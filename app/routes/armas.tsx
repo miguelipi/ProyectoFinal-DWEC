@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SkinCard from '../components/SkinCard'; 
 import Header from '../components/Header';
+import Footer from '~/components/Footer';
 import "../styles/armas.css";
 
 const ArmasPage = () => {
@@ -72,6 +73,7 @@ const ArmasPage = () => {
         ))}
       </div>
     </div>
+    <Footer />
     </>
   );
 };

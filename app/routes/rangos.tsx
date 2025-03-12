@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Accordion from "../components/Acordeon";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function rangos() {
   return (
@@ -16,6 +17,7 @@ export default function rangos() {
         </div>
         <Accordion />
       </main>
+      <Footer></Footer>
     </>
   );
 }

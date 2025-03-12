@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/agente.css';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
@@ -92,6 +93,7 @@ export default function Agente() {
         </div>
       </section>
     </main>
+    <Footer></Footer>
         </>
     )
 

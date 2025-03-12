@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useParams } from 'react-router-dom';
 import SkinCard from '../components/SkinCard'; // Asegúrate de que la ruta sea correcta
 import Header from '../components/Header';
+import Footer from '~/components/Footer';
 import "../styles/armas.css";
 
 const SkinDetailsPage = () => {
@@ -79,6 +80,7 @@ const SkinDetailsPage = () => {
             )}
           </div>
         </div>
+        <Footer></Footer>
       </>
     );
   };

@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import Video from '../components/Video';
 import Info from '../components/InfoCard';
 
@@ -15,6 +16,7 @@ export default function Home() {
           <Info variant='rangos' textButton='EXPLORAR' href='/rangos' titulo="Rangos" texto1='Explora los diferentes rangos de claisficacion.' texto2='Juega partidas competitivas para obtener el tuyo.' img='public/rangos.jpg'></Info>
         </div>
       </main>
+      <Footer></Footer>
     </>
   );
 }

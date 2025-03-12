@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/agentes.css";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import AgenteCard from "~/components/AgenteCard";
 import { useEffect, useState } from "react";
 
@@ -58,6 +59,7 @@ export default function Agentes() {
           ))}
         </div>
       </main>
+      <Footer />
     </>
   );
 }
