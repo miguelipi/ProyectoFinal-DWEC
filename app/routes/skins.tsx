@@ -69,7 +69,6 @@ const SkinDetailsPage = () => {
               filteredSkins.map((skin: any) => (
                 <SkinCard
                   key={skin.uuid}
-                  id={skin.uuid}
                   img={getSkinImage(skin)}  // Usamos la función para obtener la imagen correcta
                   nombre={skin.displayName}
                   tipo={skin.category} // O cualquier propiedad que describa el tipo

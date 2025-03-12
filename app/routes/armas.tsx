@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import SkinCard from '../components/SkinCard'; // Asegúrate de que la ruta sea correcta
+import SkinCard from '../components/SkinCard'; 
 import Header from '../components/Header';
 import "../styles/armas.css";
 
