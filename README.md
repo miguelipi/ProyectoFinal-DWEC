@@ -1,100 +1,59 @@
-# Welcome to React Router!
+# Proyecto Final - Desarrollo Web en Entorno Cliente (DWEC)
 
-A modern, production-ready template for building full-stack React applications using React Router.
+Este proyecto es similar al que ya hicimos en el primer trimestre, sin embargo, este preoyecto ha sido realizado con React Router, por lo que tuvimos que adaptar codigo y acceso a la API, ademas de la creacion de componentes y de interfaces.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
-
-## Features
-
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
-
-## Getting Started
-
-### Installation
-
-Install the dependencies:
-
-```bash
-npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
-npm run dev
-```
-
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-This template includes three Dockerfiles optimized for different package managers:
-
-- `Dockerfile` - for npm
-- `Dockerfile.pnpm` - for pnpm
-- `Dockerfile.bun` - for bun
-
-To build and run using Docker:
-
-```bash
-# For npm
-docker build -t my-app .
-
-# For pnpm
-docker build -f Dockerfile.pnpm -t my-app .
-
-# For bun
-docker build -f Dockerfile.bun -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
+# Estructura del proyecto
 
 ```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
+├── app/
+│   ├── components/     # Componetes utilizados en la practica
+│   ├── routes/     # Las rutas de la pagina
+│   ├── styles/     # Estilos para las paginas
+│   └── types/      # Interfaces para los componentes
+├── app.css     # Estilos generales 
+├── routes.tsx      # Rutas para el acceso a distintas paginas
 ```
 
-## Styling
+## Componentes
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+Tenemos distintos componentes como el Header, la Card de los agentes, de las armas.
 
----
+Tambien tenemos un acordeon con los rangos, en el que se encuentran los 3 niveles de anidamiento.
 
-Built with ❤️ using React Router.
+### Anidamiento del acordeón
+
+El componente más pequeño es RankCard, en el que deberia de mostrar el nombre del rango y su imagen.
+
+El siguiente componente es AcordeonItem, en el que se muestra el nombre de las divisiones, y dentro de ellos los distintos rangos con su RankCard.
+
+El componente padre es Acordeon, en el que hacemos la peticion a la Api para por cada division, hacer un AcordeonItem.
+
+## Routes
+
+En esta carpeta se encuentran las paginas a las que accedemos despues.
+
+- **home.tsx**
+
+    Esta es la pagina principal del proyecto, la que se muestra al desplegar.
+
+- **agentes.tsx y agente.tsxx**
+
+    En *agentes.tsx* mostramos los diferentes agentes seleccionables, si clicamos en cualquiera de ellos, nos redirige a una pagina personalizada para ese agentes, *agente.tsx*, en el que mostramos su informacion detallada.
+
+- **armas.tsx y skins.tsx**
+
+    Aqui, en *armas.tsx*, mostramos los diferentes tipos de armas, con sus categorias, y al hacer click en ellas nos redirige a *skins.tsx* donde se muestran todas las skins del arma, que podemos filtrar por rareza.
+
+## Styles y Types
+
+Aqui sencillamente se encuentran diferentes archivos css para personalizacion en la carpeta *styles* y los props para los componentes en la carpeta *types*.
+
+## Routes.tsx
+
+En este archivo se definen las rutas que tiene el proyecto. 
+
+![alt text](image.png)
+
+Vemos que la pagina *index* es la *home.tsx*.
+
+Para acceder a las paginas *agente.tsx* y *skins.tsx* le pasamos un parametro, despues recogemos el parametro y se lo pasamos al fetch para la paticion de la API.

@@ -7,7 +7,7 @@ function RankCard({ title, imageUrl }: RankCardProps) {
                     src={imageUrl}
                     alt={title}
                     key={imageUrl} // 🔥 Forzar recarga en React
-                    style={{ display: "none", height: "auto" }} // 💡 Ajuste CSS
+                    style={{ display: "block", height: "100px" }} // 💡 Ajuste CSS
                 />
             ) : (
                 <p>Cargando imagen...</p>
