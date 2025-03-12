@@ -3,7 +3,12 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 function SkinCard({ id, img, nombre, tipo }: SkinCardProps) {
 
-    const ruta = "/skins/" + id;
+    let ruta ="";
+
+    if (id) {
+         ruta = "/skins/" + id;
+    }
+   
 
     return (
         <div className="col-12 col-sm-6 col-lg-4 mb-3" id="plantillaArmas">
@@ -12,8 +17,7 @@ function SkinCard({ id, img, nombre, tipo }: SkinCardProps) {
                     <img className="card-img-top img-fluid" id="imagen"
                         src={img}
                         alt="Title"
-                        style={{ objectFit: "contain", maxHeight: "200px" }} // Ajusta maxHeight según necesidad
-                    />
+                        style={{ objectFit: "contain", maxHeight: "200px" }} />
                 </a>
                 <div className="card-body row align-items-end">
                     <h4 className="card-title col " id="nombreArma">{nombre}</h4>
